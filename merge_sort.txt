@@ -1,0 +1,23 @@
+[16,21,11,8,12,22]
+
+16,21,11 - 8,12,22
+
+16,21 - 11 -- 8,12 - 22
+
+16 - 21 -- 11 --- 8 - 12 -- 22
+
+16,21 - 11 -- 8,12 - 22
+
+11,16,21 - 8,12,22
+
+8,11,12,16,21,22
+
+[8,11,12,16,21,22]
+
+Ayrıştırdıktan sonra (n-1) kere maksimum işlem yaparız. Sağ ve ol için sonuç aynı olacağı için sonuç O(n)' dir.
+Adım sayısıda n elemanlı bir listenin her bir adımda 2 e bölünerek eleman sayıları n/2 olacak şeklde gruplandırılır.
+Buda n/2 - n/4 - n/8 - .... n/(2^x) olacak şekilde devam eder. Birleştirme içide aynı sayıda adım izlenir.
+2^x=2n den sonuc log2n olur. Buda O(logn)' dir.
+Big-O -> O(n).O(logn) den O(nlogn) olur.
+
+
